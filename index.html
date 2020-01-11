@@ -22,7 +22,7 @@
             </fieldset>
             <fieldset class="dataSet">
                 <label for="text">Concepts Covered:</label>
-                <input type="text" name="covered" minlength="2" maxlength="25" required>
+                <input type="text" name="covered" minlength="2" maxlength="25" id="topic" required>
             </fieldset>
             <fieldset class="dataSet">
                 <textarea name="journalEntry" id="journalText" cols="30" rows="3"
@@ -49,7 +49,7 @@
 
             <fieldset class="dataSet">
                 <div class="formBtn">
-                    <button type="submit" onclick="return checkPassword();">This is how I feel!!</button>
+                    <button type="button" onclick = "return   createEntry() ;" onclick ="return testCollection();">This is how I feel!!</button>
                 </div>
             </fieldset>
 
@@ -76,5 +76,6 @@
     </div>
 </footer>
 <script src="/src/main.js"></script>
+
 
 </html>
