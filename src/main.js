@@ -25,6 +25,21 @@ var createEntry = () => {
     
     }
     journalCollection.push(journalEntry)
-    // console.log(journalCollection)
+    console.log(journalCollection)
 }
+
+var logEntry = () => {
+    for (let i=0; i<journalCollection.length; i++){
+        var Html = ` <div class="entry">
+        <h1><em>${journalCollection[i].date}</em></h1>
+        <p>Topic: ${journalCollection[i].topic}</p>
+        <p>Entry: ${journalCollection[i].textarea}</p>
+        <p>Mood: ${journalCollection[i].mood}</p>
+    </div>`;
+    var bodyTwoDiv = document.querySelector(".bodyTwo");
+        bodyTwoDiv.innerHTML= Html;
+    }
+
+}
+
 
