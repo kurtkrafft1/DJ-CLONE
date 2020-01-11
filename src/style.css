@@ -69,9 +69,47 @@ footer.footerBG label {
     margin-bottom: 1%;
     color: white;
 }
+.blueBar {
+    display: flex;
+    background-image: linear-gradient(to right, silver, rgb(16, 112, 171)) ;
+    /* width: 25%; */
+    /* background-image: url("/src/img/droplets.jpeg"); */
+    align-items: center;
+    /* justify-content: center; */
+    color: white; 
+    flex-direction: column;
+    
+}
+div.blueBar h1{
+    font-size: 50px !important;
+    height: 15%;
+}
+
+.bodyTwo {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("/src/img/mountains.jpeg");
+    background-attachment: fixed;
+    background-repeat: round;  
+    display: flex; 
+    justify-content: center;
+}
 .emailTag {
     display: flex;
     flex-direction: row;
+}
+div.entry {
+    background-color: white;
+    width: 35%;
+    /* display: flex; */
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 2.5%;
+    border-style: none;
+    border-radius: 2.5%;
+    justify-content: center;
+    margin: 5%;
 }
 button {
     margin: 1%;
