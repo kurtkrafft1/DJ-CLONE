@@ -36,8 +36,11 @@ var logEntry = () => {
         <p>Entry: ${journalCollection[i].textarea}</p>
         <p>Mood: ${journalCollection[i].mood}</p>
     </div>`;
-    var bodyTwoDiv = document.querySelector(".bodyTwo");
-        bodyTwoDiv.innerHTML= Html;
+    var newDiv = document.createElement("DIV");
+    var bodyTwoDiv = document.querySelector('.bodyTwo');
+        newDiv.innerHTML = Html;
+        // document.bodyTwoDiv.innerHTML= Html;
+        bodyTwoDiv.appendChild(newDiv);
     }
 
 }
